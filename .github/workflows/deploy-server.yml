@@ -1,9 +1,9 @@
 name: Deploy to Server
 on:
  push:
- branches: [ main ]
+  branches: [ main ]
 jobs:
  deploy-to-dev-sg:
- runs-on: self-hosted
- steps:
- - run: cd /home/ops/docker-build/gt-php && sh deploy.sh main
+  runs-on: self-hosted
+  steps:
+   - run: cd /home/ops/docker-build/gt-php && sh deploy.sh main
